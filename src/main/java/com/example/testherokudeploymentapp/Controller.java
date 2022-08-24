@@ -19,4 +19,9 @@ public class Controller {
         personService.createPerson(person);
             return "person created!";
     }
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello there!";
+    }
 }
